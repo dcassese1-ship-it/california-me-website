@@ -39,7 +39,8 @@ export const products: Product[] = [
       label: "Same Ocean, Different Flow",
       href: "/music#same-ocean-different-flow",
     },
-    image: "/Image/products/same-ocean-different-flow-art.png",
+    image: "/Image/products/same-ocean-different-flow-tee-shirt.png",
+    imageFit: "cover",
   },
   {
     slug: "california-me-bucket-hat",
