@@ -20,33 +20,6 @@ export const taglines = [
 
 export const products: Product[] = [
   {
-    slug: "ride-the-wave-tee",
-    name: "Ride The Wave Tee",
-    lyricLine: "ride the wave or let it go",
-    price: 38,
-    capsule: "Golden Hour",
-    sourceVideo: "same ocean, different flow (short)",
-    image: "/placeholder/product-1.jpg",
-  },
-  {
-    slug: "no-rush-just-us-hoodie",
-    name: "No Rush Just Us Hoodie",
-    lyricLine: "no rush, just us",
-    price: 68,
-    capsule: "Hidden Angels",
-    sourceVideo: "no rush just us (short)",
-    image: "/placeholder/product-2.jpg",
-  },
-  {
-    slug: "same-ocean-cap",
-    name: "Same Ocean Cap",
-    lyricLine: "same ocean, different flow",
-    price: 32,
-    capsule: "Golden Hour",
-    sourceVideo: "same ocean, different flow (short)",
-    image: "/placeholder/product-3.jpg",
-  },
-  {
     slug: "longing-california-tee",
     name: "Longing California Tee",
     lyricLine: "top down, radio low, still chasing that feeling.",
