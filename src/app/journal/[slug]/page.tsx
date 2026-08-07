@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { journalPosts } from "@/lib/data";
 
@@ -27,7 +28,15 @@ export default async function JournalPostPage({
       <h1 className="mt-2 font-headline text-4xl text-dusk-navy">
         {post.title}
       </h1>
-      <div className="mt-6 aspect-[4/3] w-full rounded-lg bg-ocean-teal/20" />
+      <div className="relative mt-6 aspect-[4/3] w-full overflow-hidden rounded-lg bg-ocean-teal/20">
+        <Image
+          src={post.image}
+          alt={post.title}
+          fill
+          sizes="(min-width: 640px) 42rem, 100vw"
+          className="object-cover"
+        />
+      </div>
       <p className="mt-6 text-dusk-navy/80">{post.excerpt}</p>
     </article>
   );

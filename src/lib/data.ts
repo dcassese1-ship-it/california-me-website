@@ -61,7 +61,7 @@ export const journalPosts: JournalPost[] = [
     excerpt:
       "some days the tide brings the same water back around. postcard from the PCH, golden hour.",
     date: "2026-06-14",
-    image: "/placeholder/journal-1.jpg",
+    image: "/Image/journal/journal-02.png.png",
   },
   {
     slug: "no-rush-just-us",
@@ -69,6 +69,6 @@ export const journalPosts: JournalPost[] = [
     excerpt:
       "no plans past sundown. just the two of us and whatever the coast wants to give us tonight.",
     date: "2026-05-02",
-    image: "/placeholder/journal-2.jpg",
+    image: "/Image/journal/journal-01-pch-sunset.png.png",
   },
 ];
