@@ -51,7 +51,7 @@ export const products: Product[] = [
     slug: "california-me-bucket-hat",
     name: "California Me Bucket Hat",
     lyricLine: "ride the wave or let it go",
-    price: 28,
+    price: 36,
     capsule: "Golden Hour",
     image: "/Image/products/california-me-bucket-hat-art.png",
     imageFit: "cover",
