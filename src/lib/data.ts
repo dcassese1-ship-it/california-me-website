@@ -10,6 +10,7 @@ export type Product = {
   trackLink?: { label: string; href: string };
   image: string;
   imageFit?: "contain" | "cover";
+  buyUrl: string;
 };
 
 export const taglines = [
@@ -28,6 +29,8 @@ export const products: Product[] = [
     trackLink: { label: "Longing California", href: "/music#longing-california" },
     image: "/Image/products/longing-california-tee-shirt.png",
     imageFit: "cover",
+    buyUrl:
+      "https://californiame.printful.me/product/unisex-classic-tee-longing-california",
   },
   {
     slug: "same-ocean-different-flow-tee",
@@ -41,6 +44,8 @@ export const products: Product[] = [
     },
     image: "/Image/products/same-ocean-different-flow-tee-shirt.png",
     imageFit: "cover",
+    buyUrl:
+      "https://californiame.printful.me/product/unisex-classic-tee-same-ocean-different-flow",
   },
   {
     slug: "california-me-bucket-hat",
@@ -50,6 +55,7 @@ export const products: Product[] = [
     capsule: "Golden Hour",
     image: "/Image/products/california-me-bucket-hat-art.png",
     imageFit: "cover",
+    buyUrl: "https://californiame.printful.me/product/organic-bucket-hat",
   },
 ];
 

@@ -1,13 +1,14 @@
 import Image from "next/image";
-import Link from "next/link";
 import type { Product } from "@/lib/data";
 
 export default function ProductCard({ product }: { product: Product }) {
   const hasArt = !product.image.startsWith("/placeholder/");
 
   return (
-    <Link
-      href={`/shop/${product.slug}`}
+    <a
+      href={product.buyUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       className="group block overflow-hidden rounded-lg border border-dusk-navy/10 bg-paper-cream transition hover:shadow-md"
     >
       {hasArt ? (
@@ -37,6 +38,6 @@ export default function ProductCard({ product }: { product: Product }) {
           </span>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }
