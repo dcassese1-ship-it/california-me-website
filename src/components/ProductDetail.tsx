@@ -20,7 +20,9 @@ export default function ProductDetail({ product }: { product: Product }) {
             alt={product.name}
             fill
             sizes="(min-width: 640px) 50vw, 100vw"
-            className="object-contain"
+            className={
+              product.imageFit === "cover" ? "object-cover" : "object-contain"
+            }
           />
         </div>
       ) : (

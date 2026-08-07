@@ -9,6 +9,7 @@ export type Product = {
   sourceVideo?: string;
   trackLink?: { label: string; href: string };
   image: string;
+  imageFit?: "contain" | "cover";
 };
 
 export const taglines = [
@@ -52,7 +53,8 @@ export const products: Product[] = [
     price: 38,
     capsule: "Golden Hour",
     trackLink: { label: "Longing California", href: "/music#longing-california" },
-    image: "/Image/products/longing-california-tee-art.png",
+    image: "/Image/products/longing-california-tee-shirt.png",
+    imageFit: "cover",
   },
   {
     slug: "same-ocean-different-flow-tee",
@@ -65,6 +67,15 @@ export const products: Product[] = [
       href: "/music#same-ocean-different-flow",
     },
     image: "/Image/products/same-ocean-different-flow-art.png",
+  },
+  {
+    slug: "california-me-bucket-hat",
+    name: "California Me Bucket Hat",
+    lyricLine: "ride the wave or let it go",
+    price: 28,
+    capsule: "Golden Hour",
+    image: "/Image/products/california-me-bucket-hat-art.png",
+    imageFit: "cover",
   },
 ];
 
