@@ -19,7 +19,7 @@ export default function Home() {
         <div className="mt-4 aspect-video w-full max-w-md overflow-hidden rounded-lg bg-dusk-navy/10">
           <iframe
             className="h-full w-full"
-            src="https://www.youtube.com/embed?listType=user_uploads&list=californiameproject"
+            src="https://www.youtube.com/embed/videoseries?list=UUGLIQXehXPbLx728q6fxYtQ"
             title="California Me — Latest Short"
             allowFullScreen
           />
