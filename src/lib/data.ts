@@ -6,7 +6,8 @@ export type Product = {
   lyricLine: string;
   price: number;
   capsule: Capsule;
-  sourceVideo: string;
+  sourceVideo?: string;
+  trackLink?: { label: string; href: string };
   image: string;
 };
 
@@ -43,6 +44,15 @@ export const products: Product[] = [
     capsule: "Golden Hour",
     sourceVideo: "same ocean, different flow (short)",
     image: "/placeholder/product-3.jpg",
+  },
+  {
+    slug: "longing-california-tee",
+    name: "Longing California Tee",
+    lyricLine: "top down, radio low, still chasing that feeling.",
+    price: 38,
+    capsule: "Golden Hour",
+    trackLink: { label: "Longing California", href: "/music#longing-california" },
+    image: "/Image/products/longing-california-tee-art.png",
   },
 ];
 

@@ -9,6 +9,17 @@ const epLinks = [
   },
 ];
 
+const singleLinks = [
+  {
+    label: "Spotify",
+    href: "https://open.spotify.com/album/0griEc8qSSxlgbunWn7jEd?si=KqmDjYqxSKW3UU8y2GkLCw",
+  },
+  {
+    label: "Apple Music",
+    href: "https://music.apple.com/us/album/longing-california-single/1893024336",
+  },
+];
+
 const streamingLinks = [
   { label: "YouTube", href: "https://www.youtube.com/@californiameproject" },
 ];
@@ -37,6 +48,26 @@ export default function MusicPage() {
         <p className="text-sm text-dusk-navy/60">the EP</p>
         <div className="mt-4 flex flex-wrap gap-3">
           {epLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border-2 border-dusk-navy bg-paper-cream px-6 py-2.5 font-headline text-sm uppercase tracking-wide text-dusk-navy transition hover:bg-coral-sunset hover:border-coral-sunset hover:text-paper-cream"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div id="longing-california" className="mt-10">
+        <p className="font-headline text-lg text-dusk-navy">
+          longing california
+        </p>
+        <p className="text-sm text-dusk-navy/60">the single</p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          {singleLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
