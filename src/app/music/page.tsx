@@ -1,7 +1,16 @@
+const epLinks = [
+  {
+    label: "Spotify",
+    href: "https://open.spotify.com/album/5cUHcBbJRRUFdLxYmk5ooZ",
+  },
+  {
+    label: "Apple Music",
+    href: "https://music.apple.com/us/artist/california-me/1863377079",
+  },
+];
+
 const streamingLinks = [
-  { label: "Spotify", href: "https://open.spotify.com" },
-  { label: "Apple Music", href: "https://music.apple.com" },
-  { label: "YouTube", href: "https://youtube.com/@californiameproject" },
+  { label: "YouTube", href: "https://www.youtube.com/@californiameproject" },
 ];
 
 export default function MusicPage() {
@@ -15,10 +24,30 @@ export default function MusicPage() {
       <div className="mt-8 aspect-video w-full overflow-hidden rounded-lg bg-dusk-navy/10">
         <iframe
           className="h-full w-full"
-          src="https://open.spotify.com/embed/artist/"
-          title="California Me — Latest EP"
-          allow="encrypted-media"
+          src="https://www.youtube.com/embed/wcObsJwFNww"
+          title="California Me — Featured Video"
+          allowFullScreen
         />
+      </div>
+
+      <div className="mt-10">
+        <p className="font-headline text-lg text-dusk-navy">
+          same ocean, different flow
+        </p>
+        <p className="text-sm text-dusk-navy/60">the EP</p>
+        <div className="mt-4 flex flex-wrap gap-3">
+          {epLinks.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border-2 border-dusk-navy bg-paper-cream px-6 py-2.5 font-headline text-sm uppercase tracking-wide text-dusk-navy transition hover:bg-coral-sunset hover:border-coral-sunset hover:text-paper-cream"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
       </div>
 
       <div className="mt-8 flex flex-wrap gap-3">
