@@ -41,7 +41,7 @@ export default function MusicPage() {
         />
       </div>
 
-      <div className="mt-10">
+      <div id="same-ocean-different-flow" className="mt-10">
         <p className="font-headline text-lg text-dusk-navy">
           same ocean, different flow
         </p>

@@ -54,6 +54,18 @@ export const products: Product[] = [
     trackLink: { label: "Longing California", href: "/music#longing-california" },
     image: "/Image/products/longing-california-tee-art.png",
   },
+  {
+    slug: "same-ocean-different-flow-tee",
+    name: "Same Ocean Different Flow Tee",
+    lyricLine: "same ocean, different flow",
+    price: 38,
+    capsule: "Golden Hour",
+    trackLink: {
+      label: "Same Ocean, Different Flow",
+      href: "/music#same-ocean-different-flow",
+    },
+    image: "/Image/products/same-ocean-different-flow-art.png",
+  },
 ];
 
 export type JournalPost = {
