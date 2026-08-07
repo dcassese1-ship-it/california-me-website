@@ -67,6 +67,17 @@ export default function ContactPage() {
           Send
         </button>
       </form>
+
+      <p className="mt-8 text-sm text-dusk-navy/70">
+        Prefer email? Reach us directly at{" "}
+        <a
+          href="mailto:californiameproject@gmail.com"
+          className="text-ocean-teal underline decoration-ocean-teal/40 underline-offset-2 hover:text-coral-sunset"
+        >
+          californiameproject@gmail.com
+        </a>
+        .
+      </p>
     </div>
   );
 }
