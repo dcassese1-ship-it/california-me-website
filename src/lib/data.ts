@@ -52,9 +52,36 @@ export type JournalPost = {
   excerpt: string;
   date: string;
   image: string;
+  songLinks?: { label: string; href: string }[];
 };
 
+export function formatJournalDate(date: string) {
+  const [year, month, day] = date.split("-").map(Number);
+  return new Date(year, month - 1, day).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+
 export const journalPosts: JournalPost[] = [
+  {
+    slug: "longing-california",
+    title: "longing california",
+    excerpt: "top down, radio low, still chasing that feeling.",
+    date: "2026-07-28",
+    image: "/Image/journal/journal-03.png",
+    songLinks: [
+      {
+        label: "Spotify",
+        href: "https://open.spotify.com/album/0griEc8qSSxlgbunWn7jEd?si=KqmDjYqxSKW3UU8y2GkLCw",
+      },
+      {
+        label: "Apple Music",
+        href: "https://music.apple.com/us/album/longing-california-single/1893024336",
+      },
+    ],
+  },
   {
     slug: "same-ocean-different-flow",
     title: "same ocean, different flow",

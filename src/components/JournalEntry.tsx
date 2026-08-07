@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { JournalPost } from "@/lib/data";
+import { formatJournalDate, type JournalPost } from "@/lib/data";
 
 export default function JournalEntry({ post }: { post: JournalPost }) {
   return (
@@ -19,11 +19,7 @@ export default function JournalEntry({ post }: { post: JournalPost }) {
       </div>
       <div className="p-4">
         <p className="text-xs uppercase tracking-wide text-dusk-navy/50">
-          {new Date(post.date).toLocaleDateString("en-US", {
-            month: "long",
-            day: "numeric",
-            year: "numeric",
-          })}
+          {formatJournalDate(post.date)}
         </p>
         <h3 className="mt-1 font-headline text-xl text-dusk-navy">
           {post.title}
