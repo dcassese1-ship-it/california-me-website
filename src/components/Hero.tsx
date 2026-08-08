@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { taglines } from "@/lib/data";
 
-const HERO_IMAGE = "/Image/%5Bhero%20folder%5D/hero-wave.png";
+const HERO_IMAGE = "/Image/hero/hero-wave.png";
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
