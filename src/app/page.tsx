@@ -14,13 +14,13 @@ export default function Home() {
 
       <section className="mx-auto w-full max-w-6xl px-6 py-10">
         <h2 className="font-headline text-2xl text-dusk-navy">
-          Latest Short
+          Pacific Radio: A California Rock Opera | 6 Acts, 11 Songs, One Story
         </h2>
         <div className="mt-4 aspect-video w-full max-w-md overflow-hidden rounded-lg bg-dusk-navy/10">
           <iframe
             className="h-full w-full"
-            src="https://www.youtube.com/embed/videoseries?list=UUGLIQXehXPbLx728q6fxYtQ"
-            title="California Me — Latest Short"
+            src="https://www.youtube.com/embed/iS5A0Hirelc"
+            title="California Me — Pacific Radio: A California Rock Opera"
             allowFullScreen
           />
         </div>
